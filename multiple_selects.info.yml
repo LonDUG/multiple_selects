@@ -1,0 +1,5 @@
+name: Multiple Selects
+type: module
+description: Create individual select lists for certain multi-value fields.
+core: 8.x
+package: Fields
