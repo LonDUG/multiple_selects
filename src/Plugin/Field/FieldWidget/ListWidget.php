@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Contains \Drupal\multiple_selects\Plugin\Field\FieldWidget\ListWidget.
+ */
 
 namespace Drupal\multiple_selects\Plugin\Field\FieldWidget;
 
@@ -7,17 +11,19 @@ use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Plugin implementation of the 'multiple_selects_field_widget' widget.
+ * Plugin implementation of the 'multiple_selects_list' widget.
  *
  * @FieldWidget(
- *   id = "multiple_selects_field_widget",
+ *   id = "multiple_selects_list",
  *   label = @Translation("Multiple Selects"),
  *   field_types = {
+ *     "list_integer",
+ *     "list_float",
  *     "list_string"
  *   }
  * )
  */
-class MultipleSelectsFieldWidget extends WidgetBase {
+class ListWidget extends WidgetBase {
 
   /**
    * {@inheritdoc}
